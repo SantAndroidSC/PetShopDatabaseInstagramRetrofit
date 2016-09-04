@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrador.petshopdatabase.SettingActivity">
+
+    <include android:id="@+id/myToolbar"
+        layout="@layout/mytoolbar">
+    </include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet-Instagram"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInstUser"
+            android:hint="User:"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Connect"
+        android:textSize="20dp"
+        android:id="@+id/btnConnect"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:onClick="callInstagram"
+        />
+
+</LinearLayout>
